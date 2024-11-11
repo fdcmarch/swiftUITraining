@@ -11,6 +11,8 @@
 		4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8022CE19729005ABF55 /* ContentView.swift */; };
 		4B14A8052CE1972A005ABF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B14A8042CE1972A005ABF55 /* Assets.xcassets */; };
 		4B14A8082CE1972A005ABF55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B14A8072CE1972A005ABF55 /* Preview Assets.xcassets */; };
+		4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */; };
+		4B14A8182CE1DF87005ABF55 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8172CE1DF87005ABF55 /* Register.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4B14A8022CE19729005ABF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B14A8042CE1972A005ABF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B14A8072CE1972A005ABF55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		4B14A8172CE1DF87005ABF55 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				4B14A8002CE19729005ABF55 /* swiftUITrainingApp.swift */,
 				4B14A8022CE19729005ABF55 /* ContentView.swift */,
+				4B14A8172CE1DF87005ABF55 /* Register.swift */,
+				4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */,
 				4B14A8042CE1972A005ABF55 /* Assets.xcassets */,
 				4B14A8062CE1972A005ABF55 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */,
 				4B14A8012CE19729005ABF55 /* swiftUITrainingApp.swift in Sources */,
+				4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */,
+				4B14A8182CE1DF87005ABF55 /* Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
