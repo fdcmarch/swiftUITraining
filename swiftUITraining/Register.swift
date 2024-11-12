@@ -21,7 +21,6 @@ struct Register: View {
                     HStack {
                         Spacer()
                         Button(action: {
-                            
                         }, label: {
                             Text("Skip")
                                 .foregroundStyle(.indigo)
@@ -133,12 +132,13 @@ struct signUpTextField: View {
                     SecureField(textLabel, text: $textValue)
                         .foregroundStyle(.gray)
                 }
+                
                 Button(action: {
                     isPasswordVisible.toggle()
-                }) {
+                }, label: {
                     Image(systemName: isPasswordVisible ? "eye.fill" : "eye.slash.fill")
                         .foregroundStyle(.gray)
-                }
+                })
                 
             } else {
                 TextField(textLabel, text: $textValue)

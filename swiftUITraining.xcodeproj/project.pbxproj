@@ -13,16 +13,32 @@
 		4B14A8082CE1972A005ABF55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B14A8072CE1972A005ABF55 /* Preview Assets.xcassets */; };
 		4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */; };
 		4B14A8182CE1DF87005ABF55 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8172CE1DF87005ABF55 /* Register.swift */; };
+		4B1691772CE3062C004D3D1D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1691762CE3062C004D3D1D /* Home.swift */; };
+		4B16917B2CE31EC5004D3D1D /* literature-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1691782CE31EC5004D3D1D /* literature-32.png */; };
+		4B16917C2CE31EC5004D3D1D /* coins-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1691792CE31EC5004D3D1D /* coins-32.png */; };
+		4B16917D2CE31EC5004D3D1D /* star-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B16917A2CE31EC5004D3D1D /* star-32.png */; };
+		4B16917F2CE33CA5004D3D1D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16917E2CE33CA5004D3D1D /* Users.swift */; };
+		4B1691812CE33EAB004D3D1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1691802CE33EAB004D3D1D /* NetworkManager.swift */; };
+		4DEA840A0038A4DAD2AAFAA3 /* Pods_swiftUITraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AC6E9FD0CD8650AD260FD6 /* Pods_swiftUITraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B14A7FD2CE19729005ABF55 /* swiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		059534DC2D91728BC48BAD78 /* Pods-swiftUITraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftUITraining.debug.xcconfig"; path = "Target Support Files/Pods-swiftUITraining/Pods-swiftUITraining.debug.xcconfig"; sourceTree = "<group>"; };
+		147E63092EC61E42AA735100 /* Pods-swiftUITraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftUITraining.release.xcconfig"; path = "Target Support Files/Pods-swiftUITraining/Pods-swiftUITraining.release.xcconfig"; sourceTree = "<group>"; };
+		29AC6E9FD0CD8650AD260FD6 /* Pods_swiftUITraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftUITraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B14A8002CE19729005ABF55 /* swiftUITrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITrainingApp.swift; sourceTree = "<group>"; };
 		4B14A8022CE19729005ABF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B14A8042CE1972A005ABF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B14A8072CE1972A005ABF55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		4B14A8172CE1DF87005ABF55 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		4B1691762CE3062C004D3D1D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4B1691782CE31EC5004D3D1D /* literature-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "literature-32.png"; path = "../../../../Downloads/literature-32.png"; sourceTree = "<group>"; };
+		4B1691792CE31EC5004D3D1D /* coins-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coins-32.png"; path = "../../../../Downloads/coins-32.png"; sourceTree = "<group>"; };
+		4B16917A2CE31EC5004D3D1D /* star-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-32.png"; path = "../../../../Downloads/star-32.png"; sourceTree = "<group>"; };
+		4B16917E2CE33CA5004D3D1D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		4B1691802CE33EAB004D3D1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4B1691822CE342FF004D3D1D /* swiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = swiftUITraining.app; path = "/Users/fdc-crismarch/Projects/swiftUITraining/build/Debug-iphoneos/swiftUITraining.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,26 +46,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEA840A0038A4DAD2AAFAA3 /* Pods_swiftUITraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244A708E68889C48BC9D1A80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				059534DC2D91728BC48BAD78 /* Pods-swiftUITraining.debug.xcconfig */,
+				147E63092EC61E42AA735100 /* Pods-swiftUITraining.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		412BD01A57C1C5A80CD45277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29AC6E9FD0CD8650AD260FD6 /* Pods_swiftUITraining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B14A7F42CE19729005ABF55 = {
 			isa = PBXGroup;
 			children = (
 				4B14A7FF2CE19729005ABF55 /* swiftUITraining */,
-				4B14A7FE2CE19729005ABF55 /* Products */,
+				244A708E68889C48BC9D1A80 /* Pods */,
+				412BD01A57C1C5A80CD45277 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		4B14A7FE2CE19729005ABF55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B14A7FD2CE19729005ABF55 /* swiftUITraining.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4B14A7FF2CE19729005ABF55 /* swiftUITraining */ = {
@@ -59,6 +87,9 @@
 				4B14A8022CE19729005ABF55 /* ContentView.swift */,
 				4B14A8172CE1DF87005ABF55 /* Register.swift */,
 				4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */,
+				4B1691762CE3062C004D3D1D /* Home.swift */,
+				4B16917E2CE33CA5004D3D1D /* Users.swift */,
+				4B1691802CE33EAB004D3D1D /* NetworkManager.swift */,
 				4B14A8042CE1972A005ABF55 /* Assets.xcassets */,
 				4B14A8062CE1972A005ABF55 /* Preview Content */,
 			);
@@ -68,6 +99,9 @@
 		4B14A8062CE1972A005ABF55 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4B1691792CE31EC5004D3D1D /* coins-32.png */,
+				4B1691782CE31EC5004D3D1D /* literature-32.png */,
+				4B16917A2CE31EC5004D3D1D /* star-32.png */,
 				4B14A8072CE1972A005ABF55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -80,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B14A80B2CE1972A005ABF55 /* Build configuration list for PBXNativeTarget "swiftUITraining" */;
 			buildPhases = (
+				EE35BC8923BC625EA4829FD0 /* [CP] Check Pods Manifest.lock */,
 				4B14A7F92CE19729005ABF55 /* Sources */,
 				4B14A7FA2CE19729005ABF55 /* Frameworks */,
 				4B14A7FB2CE19729005ABF55 /* Resources */,
@@ -90,7 +125,7 @@
 			);
 			name = swiftUITraining;
 			productName = swiftUITraining;
-			productReference = 4B14A7FD2CE19729005ABF55 /* swiftUITraining.app */;
+			productReference = 4B1691822CE342FF004D3D1D /* swiftUITraining.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +152,7 @@
 				Base,
 			);
 			mainGroup = 4B14A7F42CE19729005ABF55;
-			productRefGroup = 4B14A7FE2CE19729005ABF55 /* Products */;
+			productRefGroup = 4B14A7F42CE19729005ABF55;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -132,11 +167,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B14A8082CE1972A005ABF55 /* Preview Assets.xcassets in Resources */,
+				4B16917D2CE31EC5004D3D1D /* star-32.png in Resources */,
+				4B16917C2CE31EC5004D3D1D /* coins-32.png in Resources */,
 				4B14A8052CE1972A005ABF55 /* Assets.xcassets in Resources */,
+				4B16917B2CE31EC5004D3D1D /* literature-32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE35BC8923BC625EA4829FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftUITraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B14A7F92CE19729005ABF55 /* Sources */ = {
@@ -146,6 +209,9 @@
 				4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */,
 				4B14A8012CE19729005ABF55 /* swiftUITrainingApp.swift in Sources */,
 				4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */,
+				4B1691812CE33EAB004D3D1D /* NetworkManager.swift in Sources */,
+				4B1691772CE3062C004D3D1D /* Home.swift in Sources */,
+				4B16917F2CE33CA5004D3D1D /* Users.swift in Sources */,
 				4B14A8182CE1DF87005ABF55 /* Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +340,7 @@
 		};
 		4B14A80C2CE1972A005ABF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059534DC2D91728BC48BAD78 /* Pods-swiftUITraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +369,7 @@
 		};
 		4B14A80D2CE1972A005ABF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147E63092EC61E42AA735100 /* Pods-swiftUITraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

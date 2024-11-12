@@ -99,21 +99,34 @@ struct ContentView: View {
                         .padding(.leading, 20)
                 }
                 
-                Button(action: {
-                    
-                }, label: {
-                    HStack {
-                        Spacer()
-                        Text("Sign In")
-                            .foregroundStyle(.white)
-                            .frame(height: 40)
-                        Spacer()
-                    }
-                    .padding(10)
-                    .background(.indigo)
-                    .clipShape(RoundedRectangle(cornerRadius: 16))
+//                Button(action: {
+//                    
+//                }, label: {
+//                    HStack {
+//                        Spacer()
+//                        Text("Sign In")
+//                            .foregroundStyle(.white)
+//                            .frame(height: 40)
+//                        Spacer()
+//                    }
+//                    .padding(10)
+//                    .background(.indigo)
+//                    .clipShape(RoundedRectangle(cornerRadius: 16))
+//                })
+                NavigationLink(
+                    destination: Home(),
+                    label:{
+                        HStack {
+                            Spacer()
+                            Text("Sign In")
+                                .foregroundStyle(.white)
+                                .frame(height: 40)
+                            Spacer()
+                        }
+                        .padding(10)
+                        .background(.indigo)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                 })
-                
                 Text("or continue with")
                     .foregroundStyle(.gray)
                    

@@ -1,0 +1,6 @@
+framework module Pods_swiftUITraining {
+  umbrella header "Pods-swiftUITraining-umbrella.h"
+
+  export *
+  module * { export * }
+}
