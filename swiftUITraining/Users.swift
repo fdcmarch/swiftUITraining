@@ -9,6 +9,9 @@ import Foundation
 
 struct UserResponse: Decodable {
     var users: [User]
+    let total: Int
+    let skip: Int
+    let limit: Int
 }
 
 struct User: Codable, Identifiable {

@@ -72,12 +72,6 @@ struct PersonView: View {
                         .bold()
                     Text("(Age: " + viewModel.age + ")")
                 }
-//                HStack {
-//                    Image(viewModel.flag)
-//                        .resizable()
-//                        .frame(width: 20, height: 20)
-//                    Text(viewModel.address)
-//                }
                 HStack (spacing: 20){
 
                     HStack {
@@ -224,6 +218,7 @@ struct PersonDetailView: View {
             }
             .padding(.horizontal, 10)
         }
+        .navigationTitle("User Details")
     }
 }
 
@@ -235,9 +230,9 @@ struct Home: View {
             DispatchQueue.main.async {
                 self.users = response ?? []
             }
-            for user in self.users {
-                print("User Image: \(user.image)")
-            }
+//            for user in self.users {
+//                print("User Image: \(user.image)")
+//            }
         }
     }
 
@@ -255,6 +250,7 @@ struct Home: View {
                     }
                     .listStyle(PlainListStyle())
                 }
+                .navigationTitle("Home")
                 .onAppear {
                     fetchUsers()
                 }

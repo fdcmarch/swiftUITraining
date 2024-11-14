@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B02E0172CE455BD00595A93 /* TextbookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02E0162CE455BD00595A93 /* TextbookList.swift */; };
+		4B02E01C2CE4762000595A93 /* TextbookListComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02E01B2CE4762000595A93 /* TextbookListComponents.swift */; };
 		4B14A8012CE19729005ABF55 /* swiftUITrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8002CE19729005ABF55 /* swiftUITrainingApp.swift */; };
 		4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14A8022CE19729005ABF55 /* ContentView.swift */; };
 		4B14A8052CE1972A005ABF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B14A8042CE1972A005ABF55 /* Assets.xcassets */; };
@@ -26,6 +28,9 @@
 		059534DC2D91728BC48BAD78 /* Pods-swiftUITraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftUITraining.debug.xcconfig"; path = "Target Support Files/Pods-swiftUITraining/Pods-swiftUITraining.debug.xcconfig"; sourceTree = "<group>"; };
 		147E63092EC61E42AA735100 /* Pods-swiftUITraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftUITraining.release.xcconfig"; path = "Target Support Files/Pods-swiftUITraining/Pods-swiftUITraining.release.xcconfig"; sourceTree = "<group>"; };
 		29AC6E9FD0CD8650AD260FD6 /* Pods_swiftUITraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftUITraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B02E0152CE4317400595A93 /* swiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUITraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B02E0162CE455BD00595A93 /* TextbookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookList.swift; sourceTree = "<group>"; };
+		4B02E01B2CE4762000595A93 /* TextbookListComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookListComponents.swift; sourceTree = "<group>"; };
 		4B14A8002CE19729005ABF55 /* swiftUITrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITrainingApp.swift; sourceTree = "<group>"; };
 		4B14A8022CE19729005ABF55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B14A8042CE1972A005ABF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		4B16917A2CE31EC5004D3D1D /* star-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "star-32.png"; path = "../../../../Downloads/star-32.png"; sourceTree = "<group>"; };
 		4B16917E2CE33CA5004D3D1D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4B1691802CE33EAB004D3D1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		4B1691822CE342FF004D3D1D /* swiftUITraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = swiftUITraining.app; path = "/Users/fdc-crismarch/Projects/swiftUITraining/build/Debug-iphoneos/swiftUITraining.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,6 @@
 				059534DC2D91728BC48BAD78 /* Pods-swiftUITraining.debug.xcconfig */,
 				147E63092EC61E42AA735100 /* Pods-swiftUITraining.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,12 +74,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B02E0182CE4756900595A93 /* TextbookList */ = {
+			isa = PBXGroup;
+			children = (
+				4B02E0162CE455BD00595A93 /* TextbookList.swift */,
+				4B02E01B2CE4762000595A93 /* TextbookListComponents.swift */,
+			);
+			path = TextbookList;
+			sourceTree = "<group>";
+		};
 		4B14A7F42CE19729005ABF55 = {
 			isa = PBXGroup;
 			children = (
 				4B14A7FF2CE19729005ABF55 /* swiftUITraining */,
 				244A708E68889C48BC9D1A80 /* Pods */,
 				412BD01A57C1C5A80CD45277 /* Frameworks */,
+				4B02E0152CE4317400595A93 /* swiftUITraining.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +103,7 @@
 				4B1691762CE3062C004D3D1D /* Home.swift */,
 				4B16917E2CE33CA5004D3D1D /* Users.swift */,
 				4B1691802CE33EAB004D3D1D /* NetworkManager.swift */,
+				4B02E0182CE4756900595A93 /* TextbookList */,
 				4B14A8042CE1972A005ABF55 /* Assets.xcassets */,
 				4B14A8062CE1972A005ABF55 /* Preview Content */,
 			);
@@ -125,7 +139,7 @@
 			);
 			name = swiftUITraining;
 			productName = swiftUITraining;
-			productReference = 4B1691822CE342FF004D3D1D /* swiftUITraining.app */;
+			productReference = 4B02E0152CE4317400595A93 /* swiftUITraining.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */,
+				4B02E0172CE455BD00595A93 /* TextbookList.swift in Sources */,
 				4B14A8012CE19729005ABF55 /* swiftUITrainingApp.swift in Sources */,
+				4B02E01C2CE4762000595A93 /* TextbookListComponents.swift in Sources */,
 				4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */,
 				4B1691812CE33EAB004D3D1D /* NetworkManager.swift in Sources */,
 				4B1691772CE3062C004D3D1D /* Home.swift in Sources */,
