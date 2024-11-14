@@ -14,10 +14,58 @@
             filePath = "swiftUITraining/TextbookList/TextbookList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "833BF4AC-8175-4AFD-842C-638F94104678"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swiftUITraining/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "DataFetcher"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "833BF4AC-8175-4AFD-842C-638F94104678 - 9f237dbb10a248a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of swiftUITraining.DataFetcher.fetch(isRefreshing: Swift.Bool) -&gt; ()"
+                  moduleName = "swiftUITraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/swiftUITraining/swiftUITraining/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "833BF4AC-8175-4AFD-842C-638F94104678 - acb429531fabf56e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swiftUITraining.DataFetcher.fetch(isRefreshing: Swift.Bool) -&gt; ()"
+                  moduleName = "swiftUITraining"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fdc-crismarch/Projects/swiftUITraining/swiftUITraining/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

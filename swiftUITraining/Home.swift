@@ -42,12 +42,12 @@ struct PersonViewModel {
            self.user = user
        }
 
-        var imageName: String { return user.image }
-        var name: String { return user.firstName + " " + user.lastName }
-        var age: String { return String(user.age) }
-        var address: String { return user.address.address }
-        var gender: String { return String(user.gender) }
-        var phone: String { return String(user.phone) }
+//        var imageName: String { return user.image }
+//        var name: String { return user.firstName + " " + user.lastName }
+//        var age: String { return String(user.age) }
+//        var address: String { return user.address.address }
+//        var gender: String { return String(user.gender) }
+//        var phone: String { return String(user.phone) }
     
 }
 
@@ -55,42 +55,42 @@ struct PersonView: View {
     let viewModel: PersonViewModel
     var body: some View {
         HStack {
-                AsyncImage(
-                    url: URL(string: viewModel.imageName)) { image in image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 110)
-                    } placeholder: {
-                        ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle())
-                            .tint(.white)
-                            .frame(width: 100, height: 110)
-                    }
-            VStack(alignment: .leading) {
-                HStack{
-                    Text(viewModel.name)
-                        .bold()
-                    Text("(Age: " + viewModel.age + ")")
-                }
-                HStack (spacing: 20){
-
-                    HStack {
-                        Image(systemName: "figure.child")
-                        Text(viewModel.gender)
-                    }
-                }
-                
-                HStack {
-                    Image(systemName: "location.circle")
-                    Text(viewModel.address)
-                }
-                
-                HStack {
-                    Image(systemName: "phone.fill")
-                    Text(viewModel.phone)
-                }
-                
-            }
+//                AsyncImage(
+//                    url: URL(string: viewModel.imageName)) { image in image
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(width: 100, height: 110)
+//                    } placeholder: {
+//                        ProgressView()
+//                            .progressViewStyle(CircularProgressViewStyle())
+//                            .tint(.white)
+//                            .frame(width: 100, height: 110)
+//                    }
+//            VStack(alignment: .leading) {
+//                HStack{
+//                    Text(viewModel.name)
+//                        .bold()
+//                    Text("(Age: " + viewModel.age + ")")
+//                }
+//                HStack (spacing: 20){
+//
+//                    HStack {
+//                        Image(systemName: "figure.child")
+//                        Text(viewModel.gender)
+//                    }
+//                }
+//                
+//                HStack {
+//                    Image(systemName: "location.circle")
+//                    Text(viewModel.address)
+//                }
+//                
+//                HStack {
+//                    Image(systemName: "phone.fill")
+//                    Text(viewModel.phone)
+//                }
+//                
+//            }
         }
     }
 }
@@ -100,69 +100,69 @@ struct PersonDetailView: View {
     var body: some View {
         ScrollView{
             VStack (spacing: 20){
-                VStack (alignment: .leading){
-                    HStack (spacing: 10) {
-                        AsyncImage(
-                            url: URL(string: viewModel.imageName)) { image in image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50)
-                            } placeholder: {
-                                ProgressView()
-                                    .frame(width: 100, height: 110)
-                            }
-//                        Image(viewModel.imageName)
-//                            .resizable()
-//                            .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                        
-                        HStack{
-                            Text(viewModel.name)
-                            Spacer()
-                            Image(systemName: "ellipsis")
-                        }
-                    }
-                }
-                .padding(3)
-                .background(.gray.opacity(0.6))
+//                VStack (alignment: .leading){
+//                    HStack (spacing: 10) {
+//                        AsyncImage(
+//                            url: URL(string: viewModel.imageName)) { image in image
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 50, height: 50)
+//                            } placeholder: {
+//                                ProgressView()
+//                                    .frame(width: 100, height: 110)
+//                            }
+////                        Image(viewModel.imageName)
+////                            .resizable()
+////                            .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+//                        
+//                        HStack{
+//                            Text(viewModel.name)
+//                            Spacer()
+//                            Image(systemName: "ellipsis")
+//                        }
+//                    }
+//                }
+//                .padding(3)
+//                .background(.gray.opacity(0.6))
                 
-                HStack{
-                    AsyncImage(
-                        url: URL(string: viewModel.imageName)) { image in image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150, height: 200)
-                        } placeholder: {
-                            ProgressView()
-                                .frame(width: 100, height: 110)
-                        }
-//                    Image(viewModel.imageName)
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-                        
-                    
-                    VStack (alignment: .leading, spacing: 10) {
-                        
-                        HStack {
-                            Image(systemName: "birthday.cake.fill")
-                            Text(viewModel.age)
-                        }
-                        HStack{
-                            Image(systemName: "figure.child")
-                            Text(viewModel.gender)
-                        }
-                        
-                        HStack{
-                            Image(systemName: "location.circle")
-                            Text(viewModel.address)
-                        }
-                        
-                        HStack{
-                            Image(systemName: "phone.fill")
-                            Text(viewModel.phone)
-                        }
-                    }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
+//                HStack{
+//                    AsyncImage(
+//                        url: URL(string: viewModel.imageName)) { image in image
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 150, height: 200)
+//                        } placeholder: {
+//                            ProgressView()
+//                                .frame(width: 100, height: 110)
+//                        }
+////                    Image(viewModel.imageName)
+////                        .resizable()
+////                        .frame(width: 200, height: 200)
+//                        
+//                    
+//                    VStack (alignment: .leading, spacing: 10) {
+//                        
+//                        HStack {
+//                            Image(systemName: "birthday.cake.fill")
+//                            Text(viewModel.age)
+//                        }
+//                        HStack{
+//                            Image(systemName: "figure.child")
+//                            Text(viewModel.gender)
+//                        }
+//                        
+//                        HStack{
+//                            Image(systemName: "location.circle")
+//                            Text(viewModel.address)
+//                        }
+//                        
+//                        HStack{
+//                            Image(systemName: "phone.fill")
+//                            Text(viewModel.phone)
+//                        }
+//                    }
+//                }
+//                .frame(maxWidth: .infinity, alignment: .leading)
                 
                 VStack{
                     Button(
@@ -225,16 +225,13 @@ struct PersonDetailView: View {
 struct Home: View {
     @State private var users: [User] = []
 
-    func fetchUsers() {
-        NetworkManager.shared.getAllUsersNativeWay { response in
-            DispatchQueue.main.async {
-                self.users = response ?? []
-            }
-//            for user in self.users {
-//                print("User Image: \(user.image)")
+//    func fetchUsers() {
+//        NetworkManager.shared.getAllUsersNativeWay { response in
+//            DispatchQueue.main.async {
+//                self.users = response ?? []
 //            }
-        }
-    }
+//        }
+//    }
 
     var body: some View {
             NavigationStack {
@@ -252,7 +249,7 @@ struct Home: View {
                 }
                 .navigationTitle("Home")
                 .onAppear {
-                    fetchUsers()
+//                    fetchUsers()
                 }
             }
         }

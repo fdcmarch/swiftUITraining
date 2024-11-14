@@ -92,57 +92,64 @@ struct TextbookList: View {
     }()
     @State private var selectedTextbook: Textbook? = nil
     @State private var isModalPresented: Bool = false
+    @State private var showAlert = false
     
     var body: some View {
-        ZStack {
-            ScrollView{
-                VStack(spacing: 20){
-                    HeaderView()
-                    UpperView()
-                    MiddleView()
-                    
-                    ForEach(textbooks) { textbook in
-                        TextbookListView(viewModel: .init(textbook: textbook))
-                            .onTapGesture {
-                                selectedTextbook = textbook
-                                isModalPresented = true
-                            }
-                    }
-                    
-                    VStack{
-                        Text("すこしむずかしいきょうざいも\n べんきょうできるよ!")
-                            .multilineTextAlignment(.center)
+        NavigationStack{
+            ZStack {
+                ScrollView{
+                    VStack(spacing: 20){
+                        HeaderView()
+                        UpperView()
+                        MiddleView()
                         
-                        Image(.bear)
-                            .resizable()
-                            .frame(width: 200, height: 200)
+                        ForEach(textbooks) { textbook in
+                            TextbookListView(viewModel: .init(textbook: textbook))
+                                .onTapGesture {
+                                    selectedTextbook = textbook
+                                    isModalPresented = true
+                                }
+                        }
                         
-                        ZStack{
-                            Button(action: {}, label: {
+                        VStack{
+                            Text("すこしむずかしいきょうざいも\n べんきょうできるよ!")
+                                .multilineTextAlignment(.center)
+                            
+                            Image(.bear)
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                            
+                            ZStack{
+                                Button(action: {
+                                    showAlert = true
+                                }, label: {
                                     Text("すべてみる")
                                         .foregroundStyle(.black)
                                         .fontWeight(.bold)
                                         .frame(height: 35)
-                                .padding(10)
-                                .frame(width: 250)
-                                .background(.white)
-                                .clipShape(RoundedRectangle(cornerRadius: 25))
-                                
-                            })
+                                        .padding(10)
+                                        .frame(width: 250)
+                                        .background(.white)
+                                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                                    
+                                })
+                                AlertNotifView(isPresented: $showAlert)
+                            }
+                            .padding(.bottom, 4)
+                            .background(.gray.opacity(0.4))
+                            .clipShape(RoundedRectangle(cornerRadius: 25))
+                            
+                            
                         }
-                        .padding(.bottom, 4)
-                        .background(.gray.opacity(0.4))
-                        .clipShape(RoundedRectangle(cornerRadius: 25))
-                        
-                        
                     }
+                    .padding(.horizontal, 10)
+                    .background(.yellow.opacity(0.2))
                 }
-                .padding(.horizontal, 10)
-                .background(.yellow.opacity(0.2))
-            }
-            .sheet(item: $selectedTextbook, content: { textbook in
-                TextbookDetailModal(textbook: textbook, isPresented: $selectedTextbook)
+                .sheet(item: $selectedTextbook, content: { textbook in
+                    TextbookDetailModal(textbook: textbook, isPresented: $selectedTextbook)
                 })
+            }
+            .navigationTitle("Textbook List") 
         }
     }
 }

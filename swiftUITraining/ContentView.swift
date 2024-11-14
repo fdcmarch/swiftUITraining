@@ -114,7 +114,7 @@ struct ContentView: View {
 //                    .clipShape(RoundedRectangle(cornerRadius: 16))
 //                })
                 NavigationLink(
-                    destination: Home(),
+                    destination: UserList(),
                     label:{
                         HStack {
                             Spacer()
