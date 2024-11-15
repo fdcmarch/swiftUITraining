@@ -6,41 +6,10 @@
 //
 
 import Foundation
-//class NetworkManager {
-//    static let shared = NetworkManager()
-//    
-//    func fetchAllUsers(completion: @escaping ([User]?) -> Void) {
-//        let urlString = ""
-//        guard let url = URL(string: urlString) else {
-//            completion(nil)
-//            return
-//        }
-//        
-//        let request = URLRequest(url: url)
-//        
-//        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-//            guard let data = data, error == nil else {
-//                completion(nil)
-//                return
-//            }
-//            
-//            do {
-//                let decoder = JSONDecoder()
-//                decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                let userResponse = try decoder.decode(UserResponse.self, from: data)
-//                completion(userResponse.users)
-//            } catch {
-//                print("Error decoding: \(error.localizedDescription)")
-//                completion(nil)
-//            }
-//        }
-//        
-//        task.resume()
-//    }
-//}
+
 class DataFetcher: ObservableObject {
     @Published var users: [User] = []
-    private var isLoading = false
+    @Published var isLoading = false
     private var page = 1
     
     func fetch(isRefreshing: Bool = false) {

@@ -10,7 +10,6 @@ import SwiftUI
 struct UserDetails: View {
     var userVm: UserListViewModel
     var body: some View {
-        NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 15) {
                     ZStack(alignment: .bottomLeading) {
@@ -152,8 +151,6 @@ struct UserDetails: View {
                 }
                 .padding(10)
             }
-            .navigationTitle("User's Profile")
-        }
     }
 }
 

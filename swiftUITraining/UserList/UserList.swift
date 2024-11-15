@@ -1,20 +1,13 @@
-//
-//  UserList.swift
-//  swiftUITraining
-//
-//  Created by FDC-CrisMarch on 11/14/24.
-//
-
 import SwiftUI
 
 struct UserList: View {
     @State private var selectedTab = 0
     @StateObject var dataFetcher = DataFetcher()
-    
     let gridItems: [GridItem] = [
         GridItem(.fixed(200)),
         GridItem(.fixed(200))
     ]
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -55,40 +48,58 @@ struct UserList: View {
             ScrollView {
                 if selectedTab == 0 {
                     ForEach(dataFetcher.users) { user in
-                        NavigationLink(destination: {
-                            UserDetails(userVm: .init(user: user))
-                            
-                        }, label: {
+                        NavigationLink(destination: UserDetailRepresentableViewController(user: user)
+                            .onAppear {
+                                print("Navigating to user detail: \(user.name)")
+                            }
+                            .navigationBarBackButtonHidden(true)) {
                             ListView(userVm: .init(user: user))
                                 .padding(.vertical, 7)
                                 .foregroundStyle(.black)
-                        })
+                        }
+                        .onAppear {
+                            if user == dataFetcher.users.last {
+                                dataFetcher.fetch()
+                            }
+                        }
                     }
                 } else {
-                    LazyVGrid(columns: gridItems, content: {
+                    LazyVGrid(columns: gridItems) {
                         ForEach(dataFetcher.users) { user in
-                            NavigationLink(destination: {
-                                UserDetails(userVm: .init(user: user))
-                            }, label: {
+                            NavigationLink(destination: UserDetailRepresentableViewController(user: user)
+                                .onAppear {
+                                    print("Navigating to user detail: \(user.name)")
+                                }
+                                .navigationBarBackButtonHidden(true)) {
                                 GridView(userVm: .init(user: user))
                                     .foregroundStyle(.black)
                                     .frame(width: 200, height: 200)
                                     .background(.gray.opacity(0.1))
-                            })
+                            }
                         }
-                    })
+                    }
+                }
+                
+                GeometryReader { geometry in
+                    Color.clear
+                        .onChange(of: geometry.frame(in: .global).maxY) { value in
+                            let screenHeight = UIScreen.main.bounds.height
+                            if value < screenHeight {
+                                if !dataFetcher.isLoading {
+                                    dataFetcher.fetch(isRefreshing: false)
+                                }
+                            }
+                        }
                 }
             }
             .refreshable {
                 dataFetcher.fetch(isRefreshing: true)
             }
-            .onAppear{
+            .onAppear {
                 if dataFetcher.users.isEmpty {
                     dataFetcher.fetch(isRefreshing: true)
                 }
             }
-            
-            .navigationTitle("User List")
         }
     }
 }

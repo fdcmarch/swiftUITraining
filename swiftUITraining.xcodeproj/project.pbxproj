@@ -24,6 +24,9 @@
 		4B1E36B12CE5A5FB003CEAE5 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E36B02CE5A5FB003CEAE5 /* UserList.swift */; };
 		4B1E36B32CE5A769003CEAE5 /* UserListComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E36B22CE5A769003CEAE5 /* UserListComponents.swift */; };
 		4B1E36B52CE5D718003CEAE5 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E36B42CE5D718003CEAE5 /* UserDetails.swift */; };
+		4BF7E35C2CE71093001B420E /* UserDetailRepresentableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7E35B2CE71093001B420E /* UserDetailRepresentableViewController.swift */; };
+		4BF7E3602CE71925001B420E /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7E35E2CE71925001B420E /* UserDetailViewController.swift */; };
+		4BF7E3612CE71925001B420E /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF7E35F2CE71925001B420E /* UserDetailViewController.xib */; };
 		4DEA840A0038A4DAD2AAFAA3 /* Pods_swiftUITraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AC6E9FD0CD8650AD260FD6 /* Pods_swiftUITraining.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		4B1E36B02CE5A5FB003CEAE5 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		4B1E36B22CE5A769003CEAE5 /* UserListComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListComponents.swift; sourceTree = "<group>"; };
 		4B1E36B42CE5D718003CEAE5 /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		4BF7E35B2CE71093001B420E /* UserDetailRepresentableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepresentableViewController.swift; sourceTree = "<group>"; };
+		4BF7E35E2CE71925001B420E /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		4BF7E35F2CE71925001B420E /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,9 @@
 				4B14A8132CE1D3E8005ABF55 /* ForgotPassword.swift */,
 				4B1691762CE3062C004D3D1D /* Home.swift */,
 				4B16917E2CE33CA5004D3D1D /* Users.swift */,
+				4BF7E35B2CE71093001B420E /* UserDetailRepresentableViewController.swift */,
 				4B1691802CE33EAB004D3D1D /* NetworkManager.swift */,
+				4BF7E35D2CE71906001B420E /* UsersDetail */,
 				4B1E36AF2CE5A5E6003CEAE5 /* UserList */,
 				4B02E0182CE4756900595A93 /* TextbookList */,
 				4B14A8042CE1972A005ABF55 /* Assets.xcassets */,
@@ -136,6 +144,15 @@
 				4B1E36B22CE5A769003CEAE5 /* UserListComponents.swift */,
 			);
 			path = UserList;
+			sourceTree = "<group>";
+		};
+		4BF7E35D2CE71906001B420E /* UsersDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4BF7E35E2CE71925001B420E /* UserDetailViewController.swift */,
+				4BF7E35F2CE71925001B420E /* UserDetailViewController.xib */,
+			);
+			path = UsersDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,7 @@
 			files = (
 				4B14A8082CE1972A005ABF55 /* Preview Assets.xcassets in Resources */,
 				4B16917D2CE31EC5004D3D1D /* star-32.png in Resources */,
+				4BF7E3612CE71925001B420E /* UserDetailViewController.xib in Resources */,
 				4B16917C2CE31EC5004D3D1D /* coins-32.png in Resources */,
 				4B14A8052CE1972A005ABF55 /* Assets.xcassets in Resources */,
 				4B16917B2CE31EC5004D3D1D /* literature-32.png in Resources */,
@@ -237,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF7E3602CE71925001B420E /* UserDetailViewController.swift in Sources */,
 				4B1E36B12CE5A5FB003CEAE5 /* UserList.swift in Sources */,
 				4B14A8032CE19729005ABF55 /* ContentView.swift in Sources */,
 				4B1E36B32CE5A769003CEAE5 /* UserListComponents.swift in Sources */,
@@ -245,6 +264,7 @@
 				4B1E36B52CE5D718003CEAE5 /* UserDetails.swift in Sources */,
 				4B02E01C2CE4762000595A93 /* TextbookListComponents.swift in Sources */,
 				4B14A8142CE1D3E8005ABF55 /* ForgotPassword.swift in Sources */,
+				4BF7E35C2CE71093001B420E /* UserDetailRepresentableViewController.swift in Sources */,
 				4B1691812CE33EAB004D3D1D /* NetworkManager.swift in Sources */,
 				4B1691772CE3062C004D3D1D /* Home.swift in Sources */,
 				4B16917F2CE33CA5004D3D1D /* Users.swift in Sources */,
